@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rango',
+    'registration',
 ]
 
 MIDDLEWARE = [
@@ -130,4 +131,18 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
-LOGIN_URL = 'rango:login'
+
+
+# Registration app
+
+# If True, users can register
+REGISTRATION_OPEN = True
+
+# If True, the user will be automatically logged in after registering
+REGISTRATION_AUTO_LOGIN = True
+
+# The URL that Django redirects users to after logging in
+LOGIN_REDIRECT_URL = 'rango:index'
+
+# The page users are directed to if they are not logged in.
+LOGIN_URL = 'auth_login'

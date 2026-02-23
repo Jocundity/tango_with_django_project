@@ -25,4 +25,6 @@ urlpatterns = [
     path('rango/', include('rango.urls')),
     # The above maps any URLs startng with rango/ to be handled by rango
     path('admin/', admin.site.urls),
+    path('accounts/', include('registration.backends.simple.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
