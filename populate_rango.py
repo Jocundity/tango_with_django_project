@@ -54,7 +54,24 @@ def populate():
                        'likes': 32},
             'Other Frameworks': {'pages': other_pages,
                                  'views': 32,
-                                 'likes': 16}}
+                                 'likes': 16},
+            'Pascal': {'pages': [],
+                       'views': 3,
+                       'likes': 1},
+            'Perl': {'pages': [],
+                       'views': 3,
+                       'likes': 1},
+            'PHP': {'pages': [],
+                       'views': 3,
+                       'likes': 1},
+            'Postscript': {'pages': [],
+                       'views': 3,
+                       'likes': 1},
+            'Programming': {'pages': [],
+                       'views': 3,
+                       'likes': 1},
+
+            }
     
     # The code below goes through the cats dictionary, then adds each category,
     # and then adds all the associated pages for that category.
